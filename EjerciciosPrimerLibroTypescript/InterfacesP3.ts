@@ -4,7 +4,8 @@ interface Lakes{
     length:number,
     depth:number,
     isFreshwater:boolean,
-    countries:string[]
+    countries:string[],
+    frozen?:string[]
 }
 
 let firstLake: Lakes = {
@@ -14,4 +15,14 @@ let firstLake: Lakes = {
     area: 371000,
     isFreshwater: false,
     countries: ['Kazakhstan','Russia','Turkmenistan','Azerbaijan','Iran']
+}
+
+let thirdLake: Lakes={
+    name: 'Baikal',
+    depth: 1637,
+    length:636,
+    area: 31500,
+    isFreshwater:true,
+    countries: ['Russia'],
+    frozen: ['January','February','March','April','May']
 }
