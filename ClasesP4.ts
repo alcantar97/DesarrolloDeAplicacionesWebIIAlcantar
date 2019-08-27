@@ -1,5 +1,5 @@
 class Person{
-    name:string;
+    private name:string;
     constructor(theName:string){
         this.name = theName;
     }
