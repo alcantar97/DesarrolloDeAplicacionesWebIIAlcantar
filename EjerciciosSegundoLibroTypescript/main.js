@@ -76,6 +76,7 @@ console.log(iterator.next());
 */
 
 //Tipos de carga de módulos
+/*
 import { sumar, restar } from 'calculos';
 console.log(sumar(2, 3)); 
 console.log(restar(4, 3)); 
@@ -83,3 +84,14 @@ console.log(restar(4, 3));
 import * as calc from 'calculos';
 console.log(calc.sumar(2, 3)); 
 console.log(calc.restar(4, 3)); 
+*/
+//CommonJS
+var importacion = require('./importacion');
+console.log('Este es el resultado de la importación ' + importacion);
+var tipo = typeof importacion;
+console.log('Este es el tipo del contenido importado ' + tipo);
+
+//Healthcomponent
+var HealthComponent = require('./HealthComponent.js');
+var myHealthComponent = new HealthComponent(10);
+También
