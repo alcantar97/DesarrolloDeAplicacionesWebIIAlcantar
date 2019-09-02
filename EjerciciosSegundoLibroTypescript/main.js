@@ -22,7 +22,8 @@ Promise.all([loadItem(1),loadItem(2)])
         [item1,item2] = res;
         console.log('done')
     });
-    */
+*/
+/*
 var __generator = (this && this.__generator) || function (thisArg, body) {
     var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
     return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
@@ -55,15 +56,15 @@ function generator() {
         switch (_a.label) {
             case 0:
                 console.log('Execution started');
-                return [4 /*yield*/, 0];
+                return [4 /*yield*//*, 0];
             case 1:
                 _a.sent();
                 console.log('Execution resumed');
-                return [4 /*yield*/, 1];
+                return [4 /*yield*//*, 1];
             case 2:
                 _a.sent();
                 console.log('Execution resumed');
-                return [2 /*return*/];
+                return [2 /*return*//*];
         }
     });
 }
@@ -72,3 +73,13 @@ console.log('Starting iteration');
 console.log(iterator.next());
 console.log(iterator.next());
 console.log(iterator.next());
+*/
+
+//Tipos de carga de módulos
+import { sumar, restar } from 'calculos';
+console.log(sumar(2, 3)); 
+console.log(restar(4, 3)); 
+
+import * as calc from 'calculos';
+console.log(calc.sumar(2, 3)); 
+console.log(calc.restar(4, 3)); 
